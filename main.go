@@ -49,10 +49,8 @@ func main() {
 	beego.Router("/admin/login", &admin.AccountController{}, "*:Login")
 	beego.Router("/admin/logout", &admin.AccountController{}, "*:Logout")
 	beego.Router("/admin/account/profile", &admin.AccountController{}, "*:Profile")
-	
 	//系统管理
 	beego.Router("/admin/system/setting", &admin.SystemController{}, "*:Setting")
-	
 	//内容管理
 	beego.Router("/admin/article/list", &admin.ArticleController{}, "*:List")
 	beego.Router("/admin/article/add", &admin.ArticleController{}, "*:Add")
@@ -62,7 +60,6 @@ func main() {
 	beego.Router("/admin/article/batch", &admin.ArticleController{}, "*:Batch")
 	beego.Router("/admin/article/upload", &admin.ArticleController{}, "*:Upload")
 	beego.Router("/admin/tag", &admin.TagController{}, "*:Index")
-	
 	//用户管理
 	beego.Router("/admin/user/list", &admin.UserController{}, "*:List")
 	beego.Router("/admin/user/add", &admin.UserController{}, "*:Add")
