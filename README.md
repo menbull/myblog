@@ -1,7 +1,7 @@
 #MyBlog 
 
 修改数据库配置
-	appname = goblog
+	appname = myblog
 	httpport = 8080
 	runmode = dev
 	dbhost = localhost 
